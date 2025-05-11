@@ -34,8 +34,8 @@ INST_PATTERN = r'\[Bug Description\](.*?)\[Bug context\](.*?)\[Bug reason\](.*?)
 INST_HEAD = """Write a solution to the following coding problem:
 {problem}"""
 def get_completion(prompt, model="gpt-3.5-turbo", retries=1, timeout=5, delay=2):
-    openai.api_key = "9dd20911b7644f868a610b12d9ce461a"
-    openai.api_base = "https://lgcchat.openai.azure.com/" 
+    openai.api_key = ""
+    openai.api_base = "" 
     openai.api_type = "azure"
     openai.api_version = "2024-08-01-preview"  
     deployment_name = "chat"  
